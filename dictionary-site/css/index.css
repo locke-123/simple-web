@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Shantell+Sans:ital,wght@0,300;1,300&display=swap');
+
 /* 초기화와 컨테이너 */
 * {
     padding: 0;
@@ -6,34 +8,76 @@
 }
 
 #container {
-    background-color: brown;
     width: 1200px;
     margin: 0 auto;
 }
 
+a, a:link {
+    text-decoration: none;
+    color: #000;
+}
+
 /* 헤더라인 (로고, 상단 네비게이션, 제목) */
 header {
-    background-color: aqua;
-    height: 200px;
+    height: 150px;
 }
 
 #logo {
-    background-color:rgb(6, 92, 252);
     width: 300px;
     height: 100%;
     float: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#logoImage {
+    height: 100%;
+}
+
+#logo > a > h1 {
+    display: inline;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    margin-left: 30px;
+    color: #111;
 }
 
 header > nav {
-    background-color: darkorchid;
-    width: 100%;
-    height: 30%;
+    padding-top: 10px;
+    width: 900px;
+    height: 20%;
+    float: left;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    float: right;
+}
+
+header > nav > ul > a{
+    display: inline-block;
+}
+
+header > nav > ul > a > li {
+    color: #555;
+    font-size: 14px;
 }
 
 #title {
-    background-color: darkslategray;
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 80%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#title h1 {
+    font-size: 32px;
+    margin-left: 180px;
 }
 
 /* 왼쪽 링크 목록과 네이게이션 */
