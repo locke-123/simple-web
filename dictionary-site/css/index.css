@@ -7,9 +7,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 #container {
+    background-color: #fff;
     width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px #ccc;
 }
 
 a, a:link {
@@ -80,30 +86,123 @@ header > nav > ul > a > li {
     margin-left: 180px;
 }
 
-/* 왼쪽 링크 목록과 네이게이션 */
+/* 왼쪽 링크 목록과 네비게이션 */
 #container > nav {
-    background-color: chartreuse;
+    border-top: 2px solid #aaa;
     width: 200px;
     height: 600px;
     float: left;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
+#container > nav > div {
+    width: 150px;
+}
+
+#container > nav > div > ul {
+    margin-top: 10px;
+    border-top: 1px solid #000;
+    list-style: none;
+}
+
+#container > nav > div > ul > li {
+    margin: 5px;
+}
+
+/* 본문 */
 article {
-    background-color: darkorange;
+    border-top: 2px solid #aaa;
     width: 850px;
     height: 600px;
     float: left;
+    padding: 30px;
 }
 
+#articleBox > div{
+    margin: 10px;
+}
+
+#articleBox > div > h2{
+    border-bottom: 1px solid #555;
+}
+
+/* 오른쪽 사이드바 */
 aside {
-    background-color: darkmagenta;
+    border-top: 2px solid #aaa;
     width: 150px;
     height: 600px;
     float: right;
 }
 
+#search form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#search form input {
+    width: 100px;
+}
+
+#search form button {
+    border: 1px solid #444;
+    background-color: #ccc;
+    margin-left: 3px;
+    padding: 2px;
+}
+
+#moreInfo {
+    padding: 15px;
+}
+
+#moreInfo h4 {
+    margin-bottom: 20px;
+}
+
+#moreInfo ul {
+    list-style: none;
+}
+
+#moreInfo ul li{
+    margin: 10px;
+}
+
+/* 푸터 */
 footer {
-    background-color: deeppink;
-    height: 150px;
+    border-top: 1px solid #ccc;
+    height: 100px;
     clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+
+#comment {
+    margin: 20px;
+}
+
+#comment p {
+    font-size: 12px;
+    color: #777;
+}
+
+#sns {
+    margin: 20px;
+    width: 160px;
+}
+
+#sns ul {
+    list-style: none;
+    display: flex;
+}
+
+#sns ul li {
+    margin: 5px;
+}
+
+#sns ul li img {
+    border: 2px solid #555;
+    border-radius: 50%;
 }
